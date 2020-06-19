@@ -1,4 +1,4 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day
 
 Simple calandar app using only vanilla JS.
 

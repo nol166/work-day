@@ -1,6 +1,7 @@
 # Work Day
 
-Simple calandar app using only vanilla JS.
+Simple calandar app using only vanilla JS, moment and bootstrap.
+
 
 ## User Story
 

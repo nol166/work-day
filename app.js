@@ -14,7 +14,7 @@ saveBtn.forEach(button => {
 const updateTimeBlocks = () => {
     let timeBlocks = document.querySelectorAll('.time-block')
     timeBlocks.forEach(hour => {
-        let blockHour = hour.id.split('-')[1]
+        let blockHour = parseInt(hour.id.split('-')[1])
 
         if (blockHour < currentHour) {
             hour.classList.add('past')
@@ -31,10 +31,9 @@ const updateTimeBlocks = () => {
 
 // load from storage
 for (let i = 9; i <= 17; i++) {
-    const hour = i
     document.getElementById(
-        `hour-${hour}`
-    ).children[1].value = localStorage.getItem(`hour-${hour}`)
+        `hour-${i}`
+    ).children[1].value = localStorage.getItem(`hour-${i}`)
 }
 
 // show current time
